@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSbet — Static Interface Demo</title>
+    <meta name="description" content="VSbet is a static portfolio interface demo. No real gambling, payments or prizes.">
+    <link rel="icon" type="image/svg+xml" href="assets/img/vs-mark.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+</head>
+
+<body>
+    <aside class="demo-notice" aria-label="Demo notice"><strong>VSbet · Static demo</strong><span>Portfolio interface only. No real gambling, payments or prizes. No affiliation with a gambling operator. All displayed results are sample data.</span></aside>
+    <!-- ========== start header area ========== -->
+    <header class="header fixed-top">
+        <div class="header_left">
+            <a class="d-inline-block" href="/">
+                <img class="header_logo" src="assets/img/vsbet.svg" alt="VSbet">
+            </a>
+        </div>
+        <div class="header_right d-flex justify-content-end justify-content-xl-between align-items-center">
+            <div class="d-none d-xl-block">
+                <nav class="navbar navbar-expand-lg header_navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fi fi-sr-home"></i>
+                                HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-chip"></i> CASINO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-joker"></i> LIVE CASINO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i> SLOT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-rugby"></i> SPORTS BETTING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-console-controller"></i> E-SPORTS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <div class="dropdown d-inline-block me-2">
+                    <button class="btn border-0 px-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-1">🇺🇸</span>
+                        <span class="me-1 d-none d-sm-inline">US</span>
+                        <i class="fi fi-rr-angle-small-down lh-1"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end border p-1">
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇺🇸 US
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇬🇧 UK
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇨🇦 CA
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇦🇺 AU
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇩🇪 DE
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇫🇷 FR
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇮🇳 IN
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇧🇩 BD
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇵🇰 PK
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                🇯🇵 JP
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <button class="btn btn-outline-secondary me-1">Login</button>
+                <button class="btn btn_primary me-1">Sign Up</button>
+                <button class="btn btn-outline-secondary d-xl-none fs_16" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#sidemenu_area" aria-controls="sidemenu_area">
+                    <i class="fi fi-rr-menu-burger"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- search box -->
+    <div class="modal fade search_modal" id="search_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content p-0 rounded-2 border-">
+                <div class="modal-header border-none p-2">
+
+                    <div class="input-group">
+                        <button class="btn bg_dark border" type="button"><i class="fi fi-rr-search"></i></button>
+                        <input type="text" id="header_searchInp" class="form-control" placeholder="Search"
+                            aria-label="Search" aria-describedby="Search">
+                    </div>
+                    <button type="reset" class="btn-close ms-2 me-1" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== end header area ========== -->
+
+    <!-- ========== start sidemenu area ========== -->
+    <aside class="offcanvas-xl offcanvas-end sidemenu_area" tabindex="-1" id="sidemenu_area"
+        aria-labelledby="sidemenu_areaLabel">
+        <div class="offcanvas-header border-bottom">
+            <a class="d-inline-block" href="/">
+                <img class="header_logo" src="assets/img/vsbet.svg" alt="VSbet">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidemenu_area"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-3 hide_scrollbar d-flex flex-column gap-3">
+
+            <!-- tab buttons -->
+            <ul class="nav nav-pills nav-fill w-100 p-1 rounded_8 bg_dark4">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Casino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+            </ul>
+
+            <!-- search button -->
+            <button class="btn border rounded_8 bg_dark4 text-start text-white w-100" data-bs-toggle="modal"
+                data-bs-target="#search_modal">
+                <i class="fi fi-rr-search"></i> <span class="c_gray">Search for games...</span>
+            </button>
+
+            <!-- application download card -->
+            <div>
+                <a class="d-block text-decoration-none c_gray p_10 pb-0 rounded_8 bg_primary_grd" href="#"
+                    target="_blank">
+                    <div class="row g-2 align-items-center">
+                        <div class="col-7">
+                            <h5 class="fs_12 fw_extrabold mb-1">Application</h5>
+                            <p class="fs_10 fw-semibold mb-1">
+                                Unlock Entertainment
+                                With Exclusive
+                                Features
+                            </p>
+                        </div>
+                        <div class="col-5">
+                            <img class="w-100" src="assets/img/home/vsbet-demo-phone.svg" alt="app">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- sidemenu -->
+            <ul class="nav sidemenu flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#submenu_1"
+                        aria-expanded="true">
+                        <i class="fi fi-sr-joker"></i>Live Casino
+                    </a>
+                    <div class="collapse show" id="submenu_1">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#submenu_2"
+                        aria-expanded="false">
+                        <i class="fi fi-sr-slot-machine"></i>Slot Games
+                    </a>
+                    <div class="collapse" id="submenu_2">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#submenu_3"
+                        aria-expanded="false">
+                        <i class="fi fi-sr-rugby"></i>Sports Betting
+                    </a>
+                    <div class="collapse" id="submenu_3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#submenu_4"
+                        aria-expanded="false">
+                        <i class="fi fi-sr-console-controller"></i>E-Sports
+                    </a>
+                    <div class="collapse" id="submenu_4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#submenu_5"
+                        aria-expanded="false">
+                        <i class="fi fi-sr-gift"></i>Promotions
+                    </a>
+                    <div class="collapse" id="submenu_5">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#submenu_6"
+                        aria-expanded="false">
+                        <i class="fi fi-sr-gift"></i>Live Support
+                    </a>
+                    <div class="collapse" id="submenu_6">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-game"></i>Poker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-slot-machine"></i>Slot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fi fi-sr-dice"></i>Dice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- ========== end sidemenu area ========== -->
+
+    <!-- ========== start main area ========== -->
+    <main class="main">
+        <div class="container px_xl_32 py_32">
+            <!-- ....... start banner section ....... -->
+            <section class="mb-4">
+                <div class="owl-carousel hero_banner">
+                    <a class="d-block" href="#">
+                        <img class="w-100 rounded_12" src="assets/img/home/banner-1.jpg" alt="banner">
+                    </a>
+                    <a class="d-block" href="#">
+                        <img class="w-100 rounded_12" src="assets/img/home/banner-2.jpg" alt="banner">
+                    </a>
+                </div>
+            </section>
+            <!-- ....... end banner section ....... -->
+
+            <!-- ....... start Recent Big Wins section ....... -->
+            <section class="mb-4">
+                <div class="d-flex mb-3">
+                    <h2 class="fs_16 fw_extrabold">
+                        <span class="spinner-grow spinner-grow-sm c_primary me-1" role="status"></span>
+                        Recent Big Wins
+                    </h2>
+                </div>
+                <div class="py_10 rounded_12 bg_dark4 overflow-x-auto hide_scrollbar horizontal_scroll">
+                    <div class="px_10 d-flex gap_10">
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-1.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Billione ...
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-2.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                stikyhe…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-3.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Highlas…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-1.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Billione ...
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-2.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                stikyhe…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-3.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Highlas…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-1.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Billione ...
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-2.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                stikyhe…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-3.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Highlas…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-1.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Billione ...
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-2.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                stikyhe…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-3.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Highlas…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-1.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Billione ...
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-2.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                stikyhe…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+                        <a class="recent_win_card" href="#">
+                            <img class="recent_win_img" src="assets/img/home/recent-win-3.jpg" alt="recent win">
+                            <div class="recent_win_user">
+                                <img class="recent_win_badge" src="assets/img/home/badge.png" alt="badge">
+                                Highlas…
+                            </div>
+                            <div class="recent_win_prize">373.76K USDT</div>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end Recent Big Wins section ....... -->
+
+            <!-- ....... start Live Casino section ....... -->
+            <section class="mb-4">
+                <div class="row g-3">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="live_casino_card">
+                            <img class="live_casino_img" src="assets/img/home/casino-1.png" alt="casino">
+                            <div class="live_casino_content">
+                                <div class="live_casino_title">Live</div>
+                                <div class="live_casino_subtitle">Casino</div>
+                                <a class="btn btn_primary btn_rounded w-100" href="#">PLAY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="live_casino_card">
+                            <img class="live_casino_img" src="assets/img/home/casino-2.png" alt="casino">
+                            <div class="live_casino_content">
+                                <div class="live_casino_title">Live</div>
+                                <div class="live_casino_subtitle">Casino</div>
+                                <a class="btn btn_primary btn_rounded w-100" href="#">PLAY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="live_casino_card">
+                            <img class="live_casino_img" src="assets/img/home/casino-3.png" alt="casino">
+                            <div class="live_casino_content">
+                                <div class="live_casino_title">Live</div>
+                                <div class="live_casino_subtitle">Casino</div>
+                                <a class="btn btn_primary btn_rounded w-100" href="#">PLAY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="live_casino_card">
+                            <img class="live_casino_img" src="assets/img/home/casino-4.png" alt="casino">
+                            <div class="live_casino_content">
+                                <div class="live_casino_title">Live</div>
+                                <div class="live_casino_subtitle">Casino</div>
+                                <a class="btn btn_primary btn_rounded w-100" href="#">PLAY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="live_casino_card">
+                            <img class="live_casino_img" src="assets/img/home/casino-5.png" alt="casino">
+                            <div class="live_casino_content">
+                                <div class="live_casino_title">Live</div>
+                                <div class="live_casino_subtitle">Casino</div>
+                                <a class="btn btn_primary btn_rounded w-100" href="#">PLAY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="live_casino_card">
+                            <img class="live_casino_img" src="assets/img/home/casino-6.png" alt="casino">
+                            <div class="live_casino_content">
+                                <div class="live_casino_title">Live</div>
+                                <div class="live_casino_subtitle">Casino</div>
+                                <a class="btn btn_primary btn_rounded w-100" href="#">PLAY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end Live Casino section ....... -->
+
+            <!-- ....... start game action card section ....... -->
+            <section class="mb-4">
+                <div class="row g-3">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="game_act_card">
+                            <img class="game_act_img" src="assets/img/home/game-act-1.png" alt="casino">
+                            <div class="game_act_content">
+                                <div class="game_act_title">
+                                    <img class="inline_img" src="assets/img/home/icon-spinner.svg" alt="icon"> Bonuses
+                                </div>
+                                <div class="game_act_publisher">Powered by <img class="inline_img"
+                                        src="assets/img/vsbet.svg" alt="VSbet"></div>
+                                <a class="btn btn_sm btn_primary px-4" href="#">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="game_act_card">
+                            <img class="game_act_img" src="assets/img/home/game-act-2.png" alt="casino">
+                            <div class="game_act_content">
+                                <div class="game_act_title">
+                                    <img class="inline_img" src="assets/img/home/icon-spinner.svg" alt="icon"> Lucky
+                                    Wheel
+                                </div>
+                                <div class="game_act_publisher">Powered by <img class="inline_img"
+                                        src="assets/img/vsbet.svg" alt="VSbet"></div>
+                                <a class="btn btn_sm btn_primary px-4" href="#">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="game_act_card">
+                            <img class="game_act_img" src="assets/img/home/game-act-3.png" alt="casino">
+                            <div class="game_act_content">
+                                <div class="game_act_title">
+                                    <img class="inline_img" src="assets/img/home/icon-spinner.svg" alt="icon"> Poker
+                                </div>
+                                <div class="game_act_publisher">Powered by <img class="inline_img"
+                                        src="assets/img/vsbet.svg" alt="VSbet"></div>
+                                <a class="btn btn_sm btn_primary px-4" href="#">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end game action card section ....... -->
+
+            <!-- ....... start Slot Games section ....... -->
+            <section class="mb-4">
+                <div class="games_section_header ">
+                    <h2 class="fs_16 fw_extrabold mb-0">
+                        <i class="fi fi-sr-slot-machine me-1"></i> Slot Games
+                    </h2>
+                    <a href="#" class="btn btn-dark">View All</a>
+                </div>
+                <div>
+                    <div class="owl-carousel games_slider">
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end Slot Games section ....... -->
+
+            <!-- ....... start Live Casino Games section ....... -->
+            <section class="mb-4">
+                <div class="games_section_header ">
+                    <h2 class="fs_16 fw_extrabold mb-0">
+                        <i class="fi fi-sr-joker me-1"></i> Live Casino Games
+                    </h2>
+                    <a href="#" class="btn btn-dark">View All</a>
+                </div>
+                <div>
+                    <div class="owl-carousel games_slider">
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end Live Casino Games section ....... -->
+
+            <!-- ....... start Casino Games section ....... -->
+            <section class="mb-4">
+                <div class="games_section_header ">
+                    <h2 class="fs_16 fw_extrabold mb-0">
+                        <i class="fi fi-sr-billiard me-1"></i> Casino Games
+                    </h2>
+                    <a href="#" class="btn btn-dark">View All</a>
+                </div>
+                <div>
+                    <div class="owl-carousel games_slider">
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-1.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-2.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="game_card">
+                            <img class="game_card_img" src="assets/img/home/game-3.jpg" alt="game">
+                            <div class="game_card_content">
+                                <div class="game_card_subtitle">Pragmatic Play</div>
+                                <div class="game_card_title">Santa’s Xmas</div>
+                                <div class="game_card_playicon"><i class="fi fi-rr-play-circle"></i></div>
+                                <a class="btn btn_sm btn_primary w-100" href="#">PLAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end Casino Games section ....... -->
+
+            <!-- ....... start Providers section ....... -->
+            <section class="mb-4">
+                <div class="games_section_header ">
+                    <h2 class="fs_16 fw_extrabold mb-0">
+                        <i class="fi fi-sr-billiard me-1"></i> Providers
+                    </h2>
+                    <a href="#" class="btn btn-dark">View All</a>
+                </div>
+                <div>
+                    <div class="owl-carousel games_slider">
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/amusnet-interactive.png" alt="amusnet interactive">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/bullshark-games.png" alt="bullshark games">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/elk-studios.png" alt="elk studios">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/pragmatic-play.png" alt="pragmatic play">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/bgamming.png" alt="bgamming">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/amusnet-interactive.png" alt="amusnet interactive">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/bullshark-games.png" alt="bullshark games">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/elk-studios.png" alt="elk studios">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/pragmatic-play.png" alt="pragmatic play">
+                        </a>
+                        <a class="provider_card" href="#" target="_blank">
+                            <img src="assets/img/home/bgamming.png" alt="bgamming">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end Providers section ....... -->
+
+            <!-- ....... start cta section ....... -->
+            <section class="mb-4">
+                <div class="cta_card">
+                    <div class="row align-items-center">
+                        <div class="col-md-7 col-lg-5">
+                            <img class="img-fluid mb-4" src="assets/img/vsbet.svg" alt="VSbet">
+                            <p class="fs_24 fw-medium c_white lh-base mb-0">Countless ways to achieve great winnings
+                                with thousands of exciting games</p>
+                        </div>
+                        <div class="col-md-5 col-lg-4">
+                            <img class="w-100 img-fluid cta_card_img" src="assets/img/home/cta-card-img.png"
+                                alt="card image">
+                        </div>
+                        <div class="col-md-12 col-lg-3 text-center pt-3 pt-lg-0">
+                            <h2 class="fs_32 fw-bold c_primary_gradient">Join us to win!</h2>
+                            <div>
+                                <a class="btn btn_primary btn_rounded px-4" href="#">REGISTER NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end cta section ....... -->
+
+
+            <!-- ....... start Recent Big Wins section ....... -->
+            <section class="mb-4">
+                <div class="d-flex mb-3">
+                    <h2 class="fs_16 fw_extrabold mb-0">
+                        <span class="spinner-grow spinner-grow-sm c_primary me-1" role="status"></span>
+                        Recent Big Wins
+                    </h2>
+                </div>
+                <div class="rounded_12 bg_dark4">
+                    <ul class="nav nav-underline nav_overline mb-2 px-4" id="tableTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="live-bets-tab" data-bs-toggle="tab"
+                                data-bs-target="#live-bets-tab-pane" type="button" role="tab"
+                                aria-controls="live-bets-tab-pane" aria-selected="true">Live Bets</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="lucky-wins-tab" data-bs-toggle="tab"
+                                data-bs-target="#high-rollers-tab-pane" type="button" role="tab"
+                                aria-controls="high-rollers-tab-pane" aria-selected="false">High Rollers</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="lucky-wins-tab" data-bs-toggle="tab"
+                                data-bs-target="#lucky-wins-tab-pane" type="button" role="tab"
+                                aria-controls="lucky-wins-tab-pane" aria-selected="false">Lucky Wins</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="tableTabContent">
+                        <!-- tab content 1 -->
+                        <div class="tab-pane fade show active" id="live-bets-tab-pane" role="tabpanel"
+                            aria-labelledby="live-bets-tab" tabindex="0">
+                            <div class="overflow-x-auto hide_scrollbar">
+                                <table class="table table-hover def_table mb-0 ">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Game</th>
+                                            <th>User</th>
+                                            <th>Time</th>
+                                            <th>Bahis</th>
+                                            <th>Multiplier</th>
+                                            <th>Payout</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-1.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-1.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                3
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-1.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$2.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-1.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                5
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-1.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$0.25
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                6
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-1.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$12.45
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- tab content 2 -->
+                        <div class="tab-pane fade" id="high-rollers-tab-pane" role="tabpanel"
+                            aria-labelledby="high-rollers-tab" tabindex="0">
+                            <div class="overflow-x-auto hide_scrollbar">
+                                <table class="table table-hover def_table mb-0 ">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Game</th>
+                                            <th>User</th>
+                                            <th>Time</th>
+                                            <th>Bahis</th>
+                                            <th>Multiplier</th>
+                                            <th>Payout</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-2.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-2.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                3
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-2.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$2.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-2.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                5
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-2.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$0.25
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                6
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-2.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$12.45
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- tab content 3 -->
+                        <div class="tab-pane fade" id="lucky-wins-tab-pane" role="tabpanel"
+                            aria-labelledby="lucky-wins-tab" tabindex="0">
+                            <div class="overflow-x-auto hide_scrollbar">
+                                <table class="table table-hover def_table mb-0 ">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Game</th>
+                                            <th>User</th>
+                                            <th>Time</th>
+                                            <th>Bahis</th>
+                                            <th>Multiplier</th>
+                                            <th>Payout</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-3.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-3.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                3
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-3.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$2.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-3.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_success">
+                                                    $244.32
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                5
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-3.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$0.25
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                6
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/game-3.jpg" alt="game"> Gates of Olympos
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="td_link" href="#">
+                                                    <img src="assets/img/home/badge-1.svg" alt="badge"> MitiSen
+                                                </a>
+                                            </td>
+                                            <td>
+                                                17:22
+                                            </td>
+                                            <td>
+                                                $4.48
+                                            </td>
+                                            <td>
+                                                x 2.80
+                                            </td>
+                                            <td>
+                                                <span class="c_danger">
+                                                    -$12.45
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ....... end Recent Big Wins section ....... -->
+
+        </div>
+    </main>
+    <!-- ========== end main area ========== -->
+
+    <!-- ========== start footer area ========== -->
+    <footer class="footer">
+            <div class="footer_top">
+                <div class="container px_xl_32">
+                    <a class="d-inline-block" href="/">
+                        <img class="footer_logo" src="assets/img/vsbet.svg" alt="VSbet">
+                    </a>
+                    <div class="pt-5">
+                        <div class="row g-3">
+                            <div class="col-sm-6 col-md-4 col-xl-3">
+                                <h6 class="fs_16 fw-bold mb-3">Popular Links</h6>
+                                <ul class="nav footer_nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Frequently Asked Questions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Help</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Create New Account</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xl-2">
+                                <h6 class="fs_16 fw-bold mb-3">Shortcuts</h6>
+                                <ul class="nav footer_nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Live</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Casino</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xl-3">
+                                <h6 class="fs_16 fw-bold mb-3">General Risk Rules</h6>
+                                <ul class="nav footer_nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Company Information</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Other Terms and Conditions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Risk Management and Security Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-sm-6 col-md-4 col-xl-2">
+                                <h6 class="fs_16 fw-bold mb-3">Contact</h6>
+                                <ul class="nav footer_nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Live Support</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Get in Touch with Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_middle"><div class="container px_xl_32 py-4 text-center"><p class="mb-0">VSbet is a static portfolio demo. No real gambling, accounts, payments or prizes. All balances, wins and player names are illustrative sample content.</p></div></div>
+            <div class="footer_bottom">
+                <div class="container px_xl_32">
+                    <div class="row gy-4">
+                        <div class="col-lg-3">
+                            <p class="fs_14 mb-0">VSbet · Static portfolio demo</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="mb-0 text-lg-end">Interface concept · No gambling services offered</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== end footer area ========== -->
+
+
+    <!-- scripts -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
